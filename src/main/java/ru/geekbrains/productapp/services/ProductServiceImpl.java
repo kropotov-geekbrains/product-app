@@ -3,11 +3,12 @@ package ru.geekbrains.productapp.services;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.stereotype.Service;
+import ru.geekbrains.api.model.ProductDto;
 import ru.geekbrains.productapp.entities.Product;
 import ru.geekbrains.productapp.repositories.ProductRepository;
 import ru.geekbrains.productapp.rest.controllers.NotFoundException;
 import ru.geekbrains.productapp.rest.mappers.ProductMapper;
-import ru.geekbrains.productapp.rest.model.ProductDto;
+
 
 import java.util.List;
 import java.util.UUID;

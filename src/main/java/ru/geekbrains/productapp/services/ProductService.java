@@ -1,6 +1,8 @@
 package ru.geekbrains.productapp.services;
 
-import ru.geekbrains.productapp.rest.model.ProductDto;
+
+
+import ru.geekbrains.api.model.ProductDto;
 
 import java.util.List;
 import java.util.UUID;

@@ -5,7 +5,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import ru.geekbrains.productapp.rest.model.ProductDto;
+import ru.geekbrains.api.controllers.ProductApi;
+import ru.geekbrains.api.model.ProductDto;
 import ru.geekbrains.productapp.services.ProductService;
 
 import java.util.List;
@@ -14,7 +15,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/products")
 @RequiredArgsConstructor
-public class ProductController {
+public class ProductController implements ProductApi {
 
     private final ProductService productService;
 
