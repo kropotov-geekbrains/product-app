@@ -1,0 +1,19 @@
+spring.h2.console.enabled: true
+spring.h2.console.path: /h2-console
+spring.jpa.show-sql: true
+server:
+  port: 9966
+spring:
+  profiles:
+    active: ${PROFILE:dev}
+  config:
+    import: optional:configserver:${CONFIG_SERVER_URL:http://127.0.0.1:9997}
+  cloud:
+    config:
+      label: ${CONFIG_BRANCH:master}
+      username: ${SERVER_USER:geek}
+      password: ${SERVER_PASS:geek_pass}
+  data:
+    jpa:
+      repositories:
+        bootstrap-mode: default
